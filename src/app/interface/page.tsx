@@ -2,9 +2,8 @@
 
 import { useState, useRef, useCallback, useEffect } from 'react'
 
-// Simulated API call - replace this with your actual API call
+// api call fn
 const getPrediction = async (videoFrame: ImageData): Promise<string> => {
-  // Simulate API latency
   await new Promise(resolve => setTimeout(resolve, 1000))
   return "Hello, how are you?"
 }
